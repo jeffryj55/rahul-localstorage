@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Register</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <style>
+</style>
+</head>
+<body>
+	<div class="container-fluid bg-primary">
+		<div class="row">
+			<div class="col-sm-12 text-center mt-5 mb-5">
+				<h1>Register</h1><br>
+
+<h5>User Name :   <input type="text" name="" id="us" ></h5><br>
+<h5> Ur New Password :   <input type="text" name="" id="n1" ></h5><br>
+<h5>Confirm Password :   <input type="text" name="" id="n2" ></h5><br>
+<button onclick="p()">Signup</button>
+<button><a id="q" href="signin.html">Login</a></button><br>
+
+      </div>
+    </div>
+  </div>
+</body>
+
+
+<script>
+  var a=[]
+  function p()
+  {
+var us = document.getElementById("us").value    
+var n1 = document.getElementById("n1").value
+var n2 = document.getElementById("n2").value
+var n3=""
+
+if (n1==n2)
+ {
+n3="Login"
+  alert("Registration Successfull");
+      document.getElementById("q").innerHTML = n3;
+
+  var data={
+    usr: us,
+    Password : n1,
+}
+ a.push(data)
+localStorage.setItem('user', JSON.stringify(a));
+}
+else
+{
+  alert("Confirm Password is wrong");
+  }
+
+console.log(data)
+
+}
+
+
+
+
+
+
+</script>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Login</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <style>
+</style>
+</head>
+<body>
+  <div class="container-fluid bg-primary">
+    <div class="row">
+      <div class="col-sm-12 text-center mt-5 mb-5">
+        <h1>LOGIN</h1><br>
+
+
+<h5> Username :   <input type="text" name="" id="us" value=""></h5><br>
+<h5> Password :   <input type="text" name="" id="n2" value=""></h5><br>
+<button onclick="q()">Signin</button>
+<a href="signup.html"><button>Signup</button></a><br>
+</div>
+</div>
+</div>
+</body>
+
+<script>
+function q()
+{
+  var us = document.getElementById("us").value    
+  var n2 = document.getElementById("n2").value
+
+if (user==us && Password==n2) {
+  alert("login Successful");
+  
+}
+    localStorage.getItem('user');
+}
+
+
+
+
+
+
+</script>
+</html>
